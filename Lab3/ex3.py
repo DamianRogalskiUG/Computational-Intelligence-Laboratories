@@ -51,6 +51,4 @@ for classifier in [dd, knn_3, knn_5, knn_11, bayes]:
 # Determing the best classifier
 best_classifier = max(classifier_results, key=lambda x: x[1])
 
-print(
-    f"In my test the {best_classifier[0]} scored the best accuracy of {best_classifier[1]}"
-)
+print(f"In my test the {best_classifier[0]} scored the best accuracy of {best_classifier[1]}")

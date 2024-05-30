@@ -22,7 +22,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.3, 
 
 
 # Creating MLP
-model = MLPClassifier(hidden_layer_sizes=(6, 3), activation='relu', max_iter=500, random_state=42)
+model = MLPClassifier(hidden_layer_sizes=(6, 8), activation='relu', max_iter=500, random_state=288493)
 
 # Training the model
 model.fit(X_train, y_train)
