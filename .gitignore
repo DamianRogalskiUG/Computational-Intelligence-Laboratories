@@ -3,3 +3,5 @@ venv
 *.keras
 *.npy
 dataset*
+yolov3.*
+titanic.csv
