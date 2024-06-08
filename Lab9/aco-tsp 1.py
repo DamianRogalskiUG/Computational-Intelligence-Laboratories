@@ -15,8 +15,12 @@ COORDS = (
     (29, 90),
     (87, 83),
     (73, 23),
+    (55, 82),
+    (90, 20),
+    (34, 56),
+    (55, 32)
 )
-
+# COORDS = [(random.randint(0, 100), random.randint(0, 100)) for _ in range(20)]
 
 def random_coord():
     r = random.randint(0, len(COORDS))
@@ -40,8 +44,8 @@ def plot_all_edges():
 
 plot_nodes()
 
-colony = AntColony(COORDS, ant_count=300, alpha=0.5, beta=1.2, 
-                    pheromone_evaporation_rate=0.40, pheromone_constant=1000.0,
+colony = AntColony(COORDS, ant_count=300, alpha=0.5, beta=1.2,
+                    pheromone_evaporation_rate=0.80, pheromone_constant=1000.0,
                     iterations=300)
 
 optimal_nodes = colony.get_path()
@@ -52,5 +56,9 @@ for i in range(len(optimal_nodes) - 1):
         (optimal_nodes[i][1], optimal_nodes[i + 1][1]),
     )
 
-
+plt.savefig("ex2_plot.jpg")
 plt.show()
+
+# more ants == slower iterations
+# alpha and beta control the visibility of nodes
+# more ants, higher pheromone_evap_rate and constant the better the nodes
