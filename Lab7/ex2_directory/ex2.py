@@ -33,7 +33,7 @@ print(negative_scores) # Adding a few sentences of hate speech increased the neg
 # negative_emotions = te.get_emotion(negative_review_text)
 
 # Show the results
-print("Emotions in the positive review:")
+# print("Emotions in the positive review:")
 # print(positive_emotions)
-print("Emotions in the negative review:")
+# print("Emotions in the negative review:")
 # print(negative_emotions)
