@@ -45,9 +45,9 @@ def show_results_on_plot(image_path, name):
     plt.show()
 
 
-cat_image_path = 'images/cat.jpg'
-bike_image_path = 'images/bike.jpg'
-bananas_image_path = 'images/bananas.jpg'
+cat_image_path = '../ex6_directory/images/cat.jpg'
+bike_image_path = '../ex6_directory/images/bike.jpg'
+bananas_image_path = '../ex6_directory/images/bananas.jpg'
 
 show_results_on_plot(cat_image_path, 'cat')
 show_results_on_plot(bike_image_path, 'bike')
