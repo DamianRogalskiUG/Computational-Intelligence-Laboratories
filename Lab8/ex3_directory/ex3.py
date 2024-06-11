@@ -20,20 +20,20 @@ labyrinth = [
 gene_space = [0, 1, 2, 3]
 
 # Parameters of the genetic algorithm
-population_size = 50
+population_size = 1000
 num_generations = 100
-num_parents_mating = 10
+num_parents_mating = 500
 mutation_percent_genes = 5
 
 
 # Fitness function
-def fitness_func(solution, solution_idx):
+def fitness_func(model, solution, solution_idx):
     x, y = 1, 1  # Starting position
     directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]  # up, down, left, right
 
     total_score = 0
     for gene in solution:
-        direction = directions[gene]
+        direction = directions[int(gene)]
         new_x, new_y = x + direction[0], y + direction[1]
 
         # Check if the new position is within the labyrinth boundaries
