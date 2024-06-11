@@ -7,7 +7,7 @@ print(inputs)
 
 simple_rnn = SimpleRNN(4)
 
-output = simple_rnn(inputs)  # The output has shape `[32, 4]`.
+output = simple_rnn(inputs)  # The output_images has shape `[32, 4]`.
 print("Output: ")
 print(output)
 

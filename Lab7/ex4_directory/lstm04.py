@@ -27,7 +27,7 @@ n_token_vocab = len(tokens)
 print("Total Tokens: ", n_tokens)
 print("Unique Tokens (Token Vocab): ", n_token_vocab)
 
-# prepare the dataset of input to output pairs encoded as integers
+# prepare the dataset of input to output_images pairs encoded as integers
 seq_length = 100
 dataX = []
 dataY = []
@@ -42,7 +42,7 @@ print("Total Patterns: ", n_patterns)
 X = np.reshape(dataX, (n_patterns, seq_length, 1))
 # normalize
 X = X / float(n_token_vocab)
-# one hot encode the output variable
+# one hot encode the output_images variable
 y = to_categorical(dataY)
 # define the LSTM model
 model = Sequential()

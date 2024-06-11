@@ -24,7 +24,7 @@ n_chars = len(raw_text)
 n_vocab = len(chars)
 print("Total Characters: ", n_chars)
 print("Total Vocab: ", n_vocab)
-# prepare the dataset of input to output pairs encoded as integers
+# prepare the dataset of input to output_images pairs encoded as integers
 seq_length = 100
 dataX = []
 dataY = []
@@ -39,7 +39,7 @@ print("Total Patterns: ", n_patterns)
 X = np.reshape(dataX, (n_patterns, seq_length, 1))
 # normalize
 X = X / float(n_vocab)
-# one hot encode the output variable
+# one hot encode the output_images variable
 y = to_categorical(dataY)
 # define the LSTM model
 model = Sequential()
