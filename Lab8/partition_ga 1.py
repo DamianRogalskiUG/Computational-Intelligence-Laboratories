@@ -66,7 +66,7 @@ print("Fitness value of the best solution = {solution_fitness}".format(solution_
 
 #tutaj dodatkowo wyswietlamy sume wskazana przez jedynki
 prediction = numpy.sum(S*solution)
-print("Predicted output based on the best solution : {prediction}".format(prediction=prediction))
+print("Predicted output_images based on the best solution : {prediction}".format(prediction=prediction))
 
 #wyswietlenie wykresu: jak zmieniala sie ocena na przestrzeni pokolen
 ga_instance.plot_fitness()
