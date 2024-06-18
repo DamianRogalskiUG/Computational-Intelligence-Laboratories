@@ -1,5 +1,5 @@
 import gymnasium as gym
-
+import mujoco_py
 env = gym.make('HalfCheetah-v4', render_mode='human')
 
 observation, info = env.reset(seed=42)

@@ -1,6 +1,6 @@
 import gymnasium as gym
 
-env = gym.make('Skiing', render_mode='human')
+env = gym.make('Pong-v0', render_mode='rgb_array')
 
 observation, info = env.reset(seed=42)
 

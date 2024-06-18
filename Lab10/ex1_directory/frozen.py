@@ -21,3 +21,6 @@ for _ in range(30):
     if terminated or truncated:
         observation, info = env.reset()
 env.close()
+
+
+# state and actions are discrete

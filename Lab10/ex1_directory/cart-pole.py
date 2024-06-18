@@ -1,4 +1,4 @@
-import gym
+import gymnasium as gym
 
 # env = gym.make('CartPole-v1', render_mode='human')
 #
@@ -12,3 +12,6 @@ for _ in range(200):
     action = 1 if env.unwrapped.state[2] > 0 else 0
     env.step(action)
 env.close()
+
+
+# continuous state and discrete actions
